@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>By the Full Moon</title>
+        <meta charset='utf-8'/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div id="game"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="ficdown.min.js"></script>
+        <script>
+            axios.get( "manuscript/by-the-full-moon.md")
+                .then(response => {
+                    let player = new Ficdown({
+                        id: 'game',
+                        source: response.data,
+                        //scroll: true,
+                        html: true,
+                        startText: 'Begin the Hunt',
+                    });
+                    player.play();
+                });
+        </script>
+    </body>
+</html>
