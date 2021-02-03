@@ -1,57 +1,51 @@
-# [Cloak of Darkness](/foyer)
+# [By the Full Moon](/nox-apartment)
 
-A basic IF demonstration by **Jane Doe**.
+**An interactive story &ndash; Part of The Game of Souls &ndash; A Beginnings Arc &ndash; By AJ Hunter**
 
-*Version 1.0*
+Hi, my name is Nox. This is a little different from the usual story we tell &ndash; AJ and I. In this tale, you get to help me decide what to do.  I might break the fourth wall, and I might ramble off into the sunset as I'm known to do.  Hopefuly you'll stick around and find out exactly how this story ends.
 
-Hurrying through the rainswept November night, you're glad to see the bright lights of the Opera House. It's surprising that there aren't more people about but, hey, what do you expect in a cheap demo game...?
+## [nox-apartment]("Nox's Studio Apartment")
 
-## [Foyer]("Foyer of the Opera House")
+I live in a simple studio apartment. It's nothing special, but it's really all I need.  I have a useable [kitchen](/nox-kitchen), a [bathroom](/nox-bathroom) with an awesome shower, my [bed](#nox-bed) is comfortable, and I have a [place to sit](#nox-couch) and relax with [a book](#nox-book) on my limited down time. The one thing you'll notice I don't have is a TV. I never really found them useful &ndash; besides I could never sit still long enough to watch a program or a movie without being forced by my friends to do so.
 
-> You quickly close the door behind you, and shake the water from your cloak. It is a handsome cloak, of velvet trimmed with satin, and slightly splattered with raindrops. Its blackness is so deep that it almost seems to suck light from the room.
+Everything I own, short of the furniture can fit into two bags &ndash; mostly.  Though I keep most of the hunting gear in the [closet](/nox-closet), and my clothes in the [dresser](/nox-dresser) across from my bed.  I'm a bit of an organizational nut so everything is always in its place.
 
-You are standing in a spacious hall, splendidly decorated in red and gold, with glittering chandeliers overhead. The entrance from the street is to the north, and there are doorways [south](/bar) and [west](/cloakroom).
+> I am only seen on the first instance
 
-## Cloakroom
+I am seen all the time [next](/scene-2)
 
-The walls of this small room were clearly once lined with hooks, though now only one remains. The exit is a door to the [east](/foyer).
+### [nox-bed]("My Bed")
 
-[Your cloak is on the floor here.](?dropped-cloak)
-[Your cloak is hanging on the hook.](?hung-cloak)
+Description
 
-- [Examine the hook.](#examined-hook)
-- [Hang your cloak on the hook.](?!lost-cloak#lost-cloak+hung-cloak)
-- [Drop your cloak on the floor.](?!lost-cloak#lost-cloak+dropped-cloak)
+### [nox-couch]("My Couch")
 
-### Examined Hook
+Description
 
-It's just a small brass hook, [with your cloak hanging on it|screwed to the wall](?hung-cloak).
+### [nox-book]("My Current Book")
 
-## [Bar]("Foyer Bar (In the dark)")
+Description
 
-You walk to the bar, but it's so dark here you can't really make anything out. The foyer is back to the [north](/foyer).
+## [nox-kitchen]("My Kitchen")
 
-- [Feel around for a light switch.](?!scuffled1#scuffled1+not-in-the-dark)
-- [Sit on a bar stool.](?!scuffled2#scuffled2+not-in-the-dark)
+Description
 
-### Not in the Dark
+Go to [main area](/nox-apartment), [kitchen](/nox-kitchen), [bathroom](/nox-bathroom), [closet](/nox-closet), [dresser](/nox-dresser)
 
-In the dark? You could easily disturb something.
+## [nox-bathroom]("My Bathroom")
 
-## [Bar](?lost-cloak "Foyer Bar")
+Description
 
-The bar, much rougher than you'd have guessed after the opulence of the foyer to the north, is completely empty. There seems to be some sort of message scrawled in the sawdust on the floor. The foyer is back to the [north](/foyer).
+Go to [main area](/nox-apartment), [kitchen](/nox-kitchen), [bathroom](/nox-bathroom), [closet](/nox-closet), [dresser](/nox-dresser)
 
-[Examine the message.](/message)
+## [nox-closet]("My Closet")
 
-## [Message]("Foyer Bar")
+Description
 
-The message, neatly marked in the sawdust, reads...
+Go to [main area](/nox-apartment), [kitchen](/nox-kitchen), [bathroom](/nox-bathroom), [closet](/nox-closet), [dresser](/nox-dresser)
 
-**You have won!**
+## [nox-dresser]("My Dresser")
 
-## [Message](?scuffled1&scuffled2 "Foyer Bar")
+Description
 
-The message has been carelessly trampled, making it difficult to read. You can just distinguish the words...
-
-**You have lost.**
+Go to [main area](/nox-apartment), [kitchen](/nox-kitchen), [bathroom](/nox-bathroom), [closet](/nox-closet), [dresser](/nox-dresser)
