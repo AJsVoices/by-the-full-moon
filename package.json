@@ -14,5 +14,11 @@
   "bugs": {
     "url": "https://github.com/AJsVoices/by-the-full-moon/issues"
   },
-  "homepage": "https://github.com/AJsVoices/by-the-full-moon#readme"
+  "homepage": "https://github.com/AJsVoices/by-the-full-moon#readme",
+  "devDependencies": {
+    "squiffy": "^5.1.3"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

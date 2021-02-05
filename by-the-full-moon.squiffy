@@ -1,0 +1,69 @@
+@title By the Full Moon
+@start By the Full Moon
+
+
+[[]]:
+@clear
+@inc turns
+
+    if(squiffy.get("turns") === 1) {
+        squiffy.set("mood", 50)
+    }
+
+**mood:** {mood} | **turn:** {turns}
+
+[[Go Back To My Apartment]](Nox's Apartment)
+
+---
+
+[[By the Full Moon]]:
+# By the Full Moon
+
+**An interactive story &ndash; Part of The Game of Souls &ndash; A Beginnings Arc &ndash; By AJ Hunter**
+
+Hi, my name is Nox. This is a little different from the usual story we tell &ndash; AJ and I. In this tale, you get to help me decide what to do.  I might break the fourth wall, and I might ramble off into the sunset as I'm known to do.  Hopefuly you'll stick around and find out exactly how this story ends.
+
+[[Begin the Hunt]](Nox's Apartment)
+
+[[Nox's Apartment]]:
+
+I live in a simple studio apartment. It's nothing special, but it's really all I need.  I have a useable [kitchen], a [bathroom] with an awesome shower, my [bed] is comfortable, and I have a [place to sit](couch) and relax with [a book] on my limited down time. The one thing you'll notice I don't have is a TV. I never really found them useful &ndash; besides I could never sit still long enough to watch a program or a movie without being forced by my friends to do so.
+
+Everything I own, short of the furniture can fit into two bags &ndash; mostly.  Though I keep most of the hunting gear in the [closet], and my clothes in the [dresser] across from my bed.  I'm a bit of an organizational nut so everything is always in its place.
+
+
+[kitchen]:
+
+Kitchen
+
+[bathroom]:
+
+Bathroom
+
+[bed]:
+
+Bed
+
+[a book]:
+
+A Book
+
+[dresser]:
+
+Dresser
+
+[closet]:
+
+Closet
+
+[couch]:
+
+Couch
+
+[@last]:
+
+There is nothing more I can do in my apartment.  I should probably [[move on]](Move On).
+
+[[Move On]]:
+
+Moving on...
