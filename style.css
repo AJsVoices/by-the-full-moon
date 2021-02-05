@@ -1,25 +1,37 @@
+:root {
+    /* https://coolors.co/f4e409-13070c-f7f7f7-71697a-dd614a */
+    --titanium-yellow: #f4e409ff;
+    --xiketic: #13070cff;
+    --cultured: #f7f7f7ff;
+    --old-lavender: #71697aff;
+    --fire-opal: #dd614aff;
+}
+
 html {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12pt;
-    background: black;
-    color: white;
+    background: var(--xiketic);
+;
+    color: var(--cultured);
+
 }
 a.squiffy-link
 {
     text-decoration: underline;
-    color: yellow;
+    color: var(--titanium-yellow);
     cursor: pointer;
 }
 a.squiffy-link.disabled
 {
     text-decoration: inherit;
-    color: inherit !important;
+    color: var(--old-lavender);
+    font-style: italic;
     cursor: inherit;
 }
 a.squiffy-header-link
 {
     text-decoration: underline;
-    color: yellow;
+    color: var(--titanium-yellow);
     cursor: pointer;
 }
 div#squiffy-container
@@ -41,4 +53,11 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 16px; margin-bottom: 16px;
+}
+
+em {
+    color: var(--old-lavender);
+}
+strong {
+    color: var(--fire-opal);
 }

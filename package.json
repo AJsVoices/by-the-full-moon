@@ -4,7 +4,9 @@
   "description": "an interactive fiction story -- a part of the Game of Souls",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/squiffy by-the-full-moon.squiffy",
+    "serve": "python -m http.server 8000"
   },
   "repository": {
     "type": "git",

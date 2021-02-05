@@ -1,0 +1,30 @@
+@title By the Full Moon
+@start By the Full Moon
+
+
+[[]]:
+@clear
+@inc turns
+
+    if(squiffy.get("turns") === 1) {
+        squiffy.set("mood", 50);
+        squiffy.set("harmony",0);
+    
+    }
+
+**harmony**: {harmony} | **mood:** {mood} | **turn:** {turns} 
+
+[[Go To My Apartment]](Nox's Apartment) 
+
+---
+
+[[By the Full Moon]]:
+@set harmony = 0
+
+# By the Full Moon
+
+**An interactive story &ndash; Part of The Game of Souls &ndash; A Beginnings Arc &ndash; By AJ Hunter**
+
+Hi, my name is Nox. This is a little different from the usual story we tell &ndash; AJ and I. In this tale, you get to help me decide what to do.  I might break the fourth wall, and I might ramble off into the sunset as I'm known to do.  Hopefuly you'll stick around and find out exactly how this story ends.
+
+[[Begin the Hunt]](Nox's Apartment)

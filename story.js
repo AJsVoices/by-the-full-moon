@@ -630,27 +630,59 @@ squiffy.story.id = '6b9189a6bc';
 squiffy.story.sections = {
 	'': {
 		'clear': true,
-		'text': "<p><strong>mood:</strong> {mood} | <strong>turn:</strong> {turns}</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Nox's Apartment\" role=\"link\" tabindex=\"0\">Go Back To My Apartment</a></p>\n<hr>",
+		'text': "<p><strong>mood:</strong> {mood} | <strong>turn:</strong> {turns} | <strong>previous location:</strong> {location}</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Nox's Apartment\" role=\"link\" tabindex=\"0\">Go To My Apartment</a> | <a class=\"squiffy-link link-section\" data-section=\"Back\" role=\"link\" tabindex=\"0\">Back</a></p>\n<hr>",
 		'attributes': ["turns+=1"],
 		'js': function() {
 			if(squiffy.get("turns") === 1) {
-			    squiffy.set("mood", 50)
+			    squiffy.set("mood", 50);
+			    squiffy.set("location","--start--");
 			}
+		},
+		'passages': {
+		},
+	},
+	'Back': {
+		'text': "",
+		'js': function() {
+			squffy.story.go(squiffy.get("location"))
 		},
 		'passages': {
 		},
 	},
 	'By the Full Moon': {
 		'text': "<h1 id=\"by-the-full-moon\">By the Full Moon</h1>\n<p><strong>An interactive story &ndash; Part of The Game of Souls &ndash; A Beginnings Arc &ndash; By AJ Hunter</strong></p>\n<p>Hi, my name is Nox. This is a little different from the usual story we tell &ndash; AJ and I. In this tale, you get to help me decide what to do.  I might break the fourth wall, and I might ramble off into the sunset as I&#39;m known to do.  Hopefuly you&#39;ll stick around and find out exactly how this story ends.</p>\n<p><a class=\"squiffy-link link-section\" data-section=\"Nox's Apartment\" role=\"link\" tabindex=\"0\">Begin the Hunt</a></p>",
+		'attributes': ["location=[[By the Full Moon]]"],
 		'passages': {
 		},
 	},
 	'Nox\'s Apartment': {
-		'text': "<p>I live in a simple studio apartment. It&#39;s nothing special, but it&#39;s really all I need.  I have a useable <a class=\"squiffy-link link-passage\" data-passage=\"kitchen\" role=\"link\" tabindex=\"0\">kitchen</a>, a <a class=\"squiffy-link link-passage\" data-passage=\"bathroom\" role=\"link\" tabindex=\"0\">bathroom</a> with an awesome shower, my <a class=\"squiffy-link link-passage\" data-passage=\"bed\" role=\"link\" tabindex=\"0\">bed</a> is comfortable, and I have a <a class=\"squiffy-link link-passage\" data-passage=\"couch\" role=\"link\" tabindex=\"0\">place to sit</a> and relax with <a class=\"squiffy-link link-passage\" data-passage=\"a book\" role=\"link\" tabindex=\"0\">a book</a> on my limited down time. The one thing you&#39;ll notice I don&#39;t have is a TV. I never really found them useful &ndash; besides I could never sit still long enough to watch a program or a movie without being forced by my friends to do so.</p>\n<p>Everything I own, short of the furniture can fit into two bags &ndash; mostly.  Though I keep most of the hunting gear in the <a class=\"squiffy-link link-passage\" data-passage=\"closet\" role=\"link\" tabindex=\"0\">closet</a>, and my clothes in the <a class=\"squiffy-link link-passage\" data-passage=\"dresser\" role=\"link\" tabindex=\"0\">dresser</a> across from my bed.  I&#39;m a bit of an organizational nut so everything is always in its place.</p>",
-		'passageCount': 7,
+		'text': "<p>I live in a simple studio apartment. It&#39;s nothing special, but it&#39;s really all I need.  I have a useable <a class=\"squiffy-link link-passage\" data-passage=\"kitchen\" role=\"link\" tabindex=\"0\">kitchen</a>, a <a class=\"squiffy-link link-passage\" data-passage=\"bathroom\" role=\"link\" tabindex=\"0\">bathroom</a> with an awesome shower, my <a class=\"squiffy-link link-passage\" data-passage=\"bed\" role=\"link\" tabindex=\"0\">bed</a> is comfortable, and I have a <a class=\"squiffy-link link-passage\" data-passage=\"couch\" role=\"link\" tabindex=\"0\">place to sit</a> and relax with <a class=\"squiffy-link link-passage\" data-passage=\"a book\" role=\"link\" tabindex=\"0\">a book</a> on my limited down time. The one thing you&#39;ll notice I don&#39;t have is a TV. I never really found them useful &ndash; besides I could never sit still long enough to watch a program or a movie without being forced by my friends to do so.</p>\n<p>Everything I own, short of the furniture can fit into two bags &ndash; mostly.  Though I keep most of the hunting gear in the <a class=\"squiffy-link link-passage\" data-passage=\"closet\" role=\"link\" tabindex=\"0\">closet</a>, and my clothes in the <a class=\"squiffy-link link-passage\" data-passage=\"dresser\" role=\"link\" tabindex=\"0\">dresser</a> across from my bed.  I&#39;m a bit of an organizational nut so everything is always in its place. </p>\n<p>Dorian designed my apartment.  He picked out the colors, the furniture, and <a class=\"squiffy-link link-passage\" data-passage=\"paintings\" role=\"link\" tabindex=\"0\">the paintings on the wall</a>. They all say Dorian was here, but only if you knew I would live in an empty apartment and be perfectly happy. I&#39;ve never owned much in my life and now that I&#39;m grown, I&#39;m not inclined to change that.</p>",
+		'attributes': ["location=[[Nox's Apartment]]"],
+		'passageCount': 14,
 		'passages': {
 			'kitchen': {
-				'text': "<p>Kitchen</p>",
+				'text': "<p>The kitchen is separated from the rest of the studio apartment by an L-shaped island bar.  Two no-back bar stools sit on the side closest to the door looking over the kitchen area.  The countertops are all black granite and perfect for chopping vegetables and baking &ndash; if I baked. The kitchen sink sits in the far corner of the counters along the wall boxing out the whole kitchn area with counter space. I have <a class=\"squiffy-link link-passage\" data-passage=\"a fancy coffee machine\" role=\"link\" tabindex=\"0\">a fancy coffee machine</a>, but I prefer to use the <a class=\"squiffy-link link-passage\" data-passage=\"french press\" role=\"link\" tabindex=\"0\">french press</a> on the gas stove top that takes up much of the front wall of the apartment.  <a class=\"squiffy-link link-passage\" data-passage=\"the cupboards\" role=\"link\" tabindex=\"0\">The cupboards</a> are a light gray wood with sleek chrome handles. All my appliances, <a class=\"squiffy-link link-passage\" data-passage=\"stove\" role=\"link\" tabindex=\"0\">stove</a>, <a class=\"squiffy-link link-passage\" data-passage=\"fridge\" role=\"link\" tabindex=\"0\">fridge</a>, <a class=\"squiffy-link link-passage\" data-passage=\"dishwasher\" role=\"link\" tabindex=\"0\">dishwasher</a> are all stainless steel.  </p>",
+			},
+			'a fancy coffee machine': {
+				'text': "<p>A Fancy Coffee Machine</p>",
+			},
+			'french press': {
+				'text': "<p>French Press</p>",
+			},
+			'the cupboards': {
+				'text': "<p>The cupboards are mostly bare save for the 4 setting stone ware set Dorian gave me as a welcome home present.  And of course the plethora of coffee cups &nddash; most of them gifts from my friend Jace, who keeps giving me the same cup that says <em><strong>I lick</strong> the salt <strong>swallow</strong> the tequila <strong>and suck</strong> the lime</em>.  Which isn&#39;t really funny unless you skip the words in cursive and only read the big bold words <strong>I lick swallow and suck</strong>.  Which is 100% true.  And I have at least five mugs just like that.</p>",
+			},
+			'paintings': {
+				'text': "<p>paintings</p>",
+			},
+			'stove': {
+				'text': "<p>stove</p>",
+			},
+			'fridge': {
+				'text': "<p>fridge</p>",
+			},
+			'dishwasher': {
+				'text': "<p>dishwasher</p>",
 			},
 			'bathroom': {
 				'text': "<p>Bathroom</p>",
@@ -677,6 +709,7 @@ squiffy.story.sections = {
 	},
 	'Move On': {
 		'text': "<p>Moving on...</p>",
+		'attributes': ["location=Moving On"],
 		'passages': {
 		},
 	},
